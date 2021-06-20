@@ -1,9 +1,8 @@
 {
   "name": "flashset-sdk",
-  "version": "1.0.0",
+  "version": "1.08.03",
   "dependencies": {
-    "axios": "^0.19.0",
-    "isomorphic-ws": "^4.0.1"
+    "axios": "^0.19.0"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,7 @@
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
     "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "build": "webpack"

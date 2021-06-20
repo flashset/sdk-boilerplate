@@ -7,5 +7,8 @@ export class LoginResponse {
   isSuccess: boolean;
   message: string; 
   token: string; 
+  result: {
+    displayName: string
+  }
 }
 

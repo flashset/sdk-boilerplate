@@ -10,7 +10,7 @@ let config = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
     libraryTarget: "umd",
-    library: "FlashsetSDK",
+    library: "flashset-sdk",
     umdNamedDefine: true,
   },
   resolve: {
@@ -57,7 +57,7 @@ DtsBundlePlugin.prototype.apply = function (compiler) {
   compiler.plugin("done", function () {
     var dts = require("dts-bundle");
     dts.bundle({
-      name: "FlashsetSDK",
+      name: "flashset-sdk",
       main: path.join(__dirname, "tmp", "index.d.ts"),
       out: path.join(__dirname, "dist", "flashset-sdk-lib.d.ts"),
       removeSource: false,
