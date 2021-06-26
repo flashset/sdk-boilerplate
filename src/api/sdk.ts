@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosResponse } from "axios";
-import { EventEmitterClass } from "../dispatcher/eventemitter"; 
+import { EventEmitterSDK } from "../dispatcher/eventemitter"; 
 import { LOGIN_URL, LOGOUT_URL, METHOD } from "../constants";
 
 export class sdk {
@@ -75,7 +75,7 @@ export class sdk {
   onLogout() {     
     try {
       // emit the logout event
-      EventEmitterClass.getInstance().emit("logout", null);
+      EventEmitterSDK.getInstance().emit("logout", null);
     } catch (ex) {
       console.log(ex);
     }

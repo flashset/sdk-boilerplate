@@ -4,20 +4,20 @@ function isFunction(obj:any) {
     return typeof obj === 'function';
 }
 
-export class EventEmitterClass {
+export class EventEmitterSDK {
     listeners: Map<string,Array<CallbackFunctionVariadicAnyReturn>>;
-    private static _instance:EventEmitterClass = new EventEmitterClass();
+    private static _instance:EventEmitterSDK = new EventEmitterSDK();
     
     constructor() {
-        if(EventEmitterClass._instance){
-            throw new Error("Error: Instantiation failed: Use EventEmitterClass.getInstance() instead of new.");
+        if(EventEmitterSDK._instance){
+            throw new Error("Error: Instantiation failed: Use EventEmitterSDK.getInstance() instead of new.");
         }
-        EventEmitterClass._instance = this;
+        EventEmitterSDK._instance = this;
         this.listeners = new Map();
     }
 
-    public static getInstance():EventEmitterClass {
-        return EventEmitterClass._instance;
+    public static getInstance():EventEmitterSDK {
+        return EventEmitterSDK._instance;
     };
 
     addListener(label:string, callback:CallbackFunctionVariadicAnyReturn) {

@@ -1,6 +1,7 @@
 {
   "name": "flashset-sdk",
-  "version": "1.08.03",
+  "version": "1.0.0",
+  "homepage": "http://www.sparkyflash.com",
   "dependencies": {
     "axios": "^0.19.0"
   },

@@ -1,5 +1,4 @@
-import { EventEmitterClass } from './eventemitter';
+import { EventEmitterSDK } from './eventemitter';
 
-export declare var EventEmitter:EventEmitterClass; 
-
-EventEmitter = EventEmitterClass.getInstance();
+export declare var EventEmitter:EventEmitterSDK; 
+EventEmitter = EventEmitterSDK.getInstance();
